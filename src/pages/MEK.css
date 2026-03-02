@@ -1,133 +1,105 @@
-/* Layout: 3/4 width and centered */
-.main-page {
-    background-image: url('../assets/purplefire.jpeg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    padding: 20px;
-    position: relative;
-    overflow: hidden;
-  }
-.mek-wrap {
-    width: 45%;
-    display: grid;
-    gap: 16px;
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    height: 70%;
-  }
-  
-  .mek-title {
-    font-size: 1.2rem;
-    font-weight: 700;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 0;
-    position: absolute;
-    left: 3px;
-    top: -50px;
-  }
-  
-  /* Table styling */
-  .mek-table {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    background: #eda847;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    height: 300px;
-  }
-  
-  .mek-table thead th {
-    background: #92440c;
-    color: #ffffff;
-    padding: 14px 16px;
-    text-align: left;
-    font-weight: 700;
-    border-right: 1px solid rgba(255,255,255,0.25);
-    vertical-align: top;
-  }
-  .mek-table thead th:last-child { border-right: none; }
-  
-  .mek-table tbody td,
-  .mek-table tbody th {
-    padding: 14px 16px;
-    border-right: 1px solid #d7dfef;
-    border-bottom: 1px solid #d7dfef;
-    vertical-align: top;
-    background: #eda847;
-  }
-  .mek-table tbody tr:nth-child(odd) td,
-  .mek-table tbody tr:nth-child(odd) th {
-    background: #eda847;
-  }
-  .mek-table tbody td:last-child,
-  .mek-table tbody th:last-child { border-right: none; }
-  
-  /* Leftmost column: left-aligned + vertically centered */
-  .mek-context {
-    width: 18ch;
-    font-weight: 600;
-    font-size: 0.7rem;
-    text-transform: none;
-    text-align: left;
-    vertical-align: middle;   /* <-- vertical center */
-  }
-  
-  /* Other columns */
-  .mek-col { width: 1%; 
-font-size: 0.7rem;}
-  
-  .mek-list {
-    margin: 0;
-    padding-left: 1.1rem;
-    font-size: 0.7rem;
-  }
-  .mek-list li { margin: 4px 0; }
-  
-  /* Mobile: let it breathe and stack */
-  @media (max-width: 760px) {
-    .mek-wrap { width: 94%; }
-  
-    .mek-table, .mek-table thead, .mek-table tbody, .mek-table th, .mek-table td, .mek-table tr {
-      display: block;
-      width: 100%;
-    }
-    .mek-table thead {
-      position: absolute;
-      left: -9999px;
-      top: -9999px;
-    }
-    .mek-table tbody tr {
-      margin: 0 0 12px;
-      border: 1px solid #d7dfef;
-      border-radius: 8px;
-      overflow: hidden;
-    }
-    .mek-table tbody th.mek-context {
-      background: #2b57a1;
-      color: #fff;
-      padding: 12px 16px;
-      border: 0;
-      border-bottom: 1px solid #1f4188;
-      vertical-align: middle; /* keep centered on mobile too */
-    }
-    .mek-table tbody td {
-      border: 0;
-      border-top: 1px solid #e6ecfa;
-      padding: 12px 16px;
-    }
-    .mek-cell-label {
-      display: block;
-      font-size: 12px;
-      letter-spacing: .02em;
-      text-transform: uppercase;
-      color: #5a6aa6;
-      margin-bottom: 6px;
-      font-weight: 700;
-    }
-  }
-  
+.mek-page {
+  padding: 1.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.mek-title {
+  margin: 0 0 0.5rem;
+  font-size: 1.8rem;
+  color: #f5f5f5; /* tweak if your background is dark */
+}
+
+.mek-subtitle {
+  margin: 0 0 1rem;
+  color: #dddddd;
+  max-width: 40rem;
+}
+
+.mek-map-wrapper {
+  position: relative;
+}
+
+/* Legend box */
+.mek-legend {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 8px 10px;
+  font-size: 12px;
+  line-height: 1.4;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+.mek-legend-title {
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+/* Avatar emoji */
+.mek-avatar-icon {
+  font-size: 24px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.mek-day-toggle {
+  margin-bottom: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.mek-day-button {
+  border: 1px solid #666;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.mek-day-button.active {
+  background: #1f77b4;
+  color: white;
+  border-color: #1f77b4;
+}
+
+.mek-status-box {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(0, 0, 0, 0.7);
+  color: #f5f5f5;
+  padding: 8px 10px;
+  max-width: 320px;
+  font-size: 12px;
+  line-height: 1.4;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.mek-status-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.mek-status-emoji {
+  font-size: 18px;
+}
+
+.mek-status-text {
+  font-size: 12px;
+}
+
+.mek-home-icon {
+  font-size: 32px;
+  text-align: center;
+  line-height: 40px;
+}

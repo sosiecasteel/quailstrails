@@ -6,6 +6,12 @@
 }
 
 @font-face {
+  font-family: 'DownCountry';
+  src: url('./fonts/PWDolmen.ttf') format('truetype');
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Plastic';
   src: url('./fonts/plastic.TTF') format('truetype');
   font-display: swap;
@@ -35,6 +41,18 @@
   --doc-code: #f3efe6;         /* code/pre background */
 }
 
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+
+/* Make the overall page background black */
+
+
+
 /* Generic “document page” wrapper */
 .doc-ivory {
   background: var(--doc-bg) !important;
@@ -61,10 +79,7 @@
 
 
 /* make the black color fill the whole scrolled document */
-html, body, #root {
-  min-height: 100%;
-  background-color: var(--page-bg);
-}
+
 
 /* paint the image at the top; don't repeat; when it ends, black shows */
 body {
@@ -72,14 +87,17 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 1400px auto;  /* or 'contain' / '100% auto' / 'cover' */
-}
+  background-color: #000000;
+  color: #f9fafb; /* optional: light text so it’s readable */
+  overflow-y: auto;  /* make sure vertical scroll is allowed */
+  }
 
 
 
 .top-section {
-  background-image: url('./assets/samesongbeenstuckinmymind.jpeg');
+  background-image: url('./assets/yellowbikenavbar.PNG');
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -88,10 +106,11 @@ body {
 }
 
 .site-title {
-  font-family: 'ComicTragedy', sans-serif;
-  font-size: 6rem;
-  color: white;
+  font-family: 'DownCountry', sans-serif;
+  font-size: 5.2rem;
+  color: rgb(4, 3, 3);
   text-decoration: none;
+  font-weight: bolder;
 }
 
 .nav-links-slim {
@@ -100,9 +119,10 @@ body {
 }
 
 .nav-links-slim a {
-  color: white;
+  color: rgb(186, 41, 188);
   text-decoration: none;
   font-size: 1.7rem;
+  font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
 }
 
@@ -111,15 +131,26 @@ body {
 }
 
 .main-page {
-  background-image: url('./assets/darkgreen.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  /* let it grow as tall as it needs */
   min-height: 100vh;
   padding: 20px;
   position: relative;
-  overflow: hidden;
+
+  /* DO NOT hide overflow or the bottom gets chopped */
+  overflow: visible;
+
+  /* no extra background here – let the body handle the fern + black */
+  background: transparent;
+
+  display: flex;
+  flex-direction: column;
+
+  /* because children are absolute, give extra bottom padding
+     so the parent is tall enough to scroll past them */
+  padding-bottom: 600px; /* tweak this number to taste */
 }
+
+
 
 .main-content {
   display: flex;
@@ -130,9 +161,9 @@ body {
 
 .flamegirl-image{
   position: absolute;
-  top: -30px;
-  left: 250px;
-  width: 100px;
+  top: 150px;
+  left: 900px;
+  width: 300px;
 }
 
 .calendar-image{
@@ -147,7 +178,7 @@ body {
   font-family: "Western";
   font-size: 2rem;
   left: 20px;
-  top: 50px;
+  top: -10px;
   color: white;
 }
 
@@ -181,5 +212,17 @@ body {
   width: 320px;
   top: -10px;
   left: 970px;
+
+}
+
+.today-container{
+  position: absolute;
+  font-size: 0.7rem;
+  top: 200px;
+  left: 310px;
+  font-family:'Times New Roman', Times, serif;
+  color: rgb(245, 140, 11);
+  max-width: 50px;
+  text-align: left;
 
 }

@@ -1,0 +1,348 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-13",
+        "day_of_week": "Monday",
+        "mode": "walk",
+        "distance_km": 2.0,
+        "start_time": "08:10",
+        "end_time": "08:35",
+        "description": "Morning walk from South Berkeley home to CNR"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.263404, 37.862912], 
+          [-122.2580, 37.8715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-13",
+        "day_of_week": "Monday",
+        "mode": "walk",
+        "distance_km": 0.8,
+        "start_time": "09:00",
+        "end_time": "09:10",
+        "description": "Walk from CNR to breakfast at Sconehenge"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.2580, 37.8715],
+          [-122.267163, 37.858596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-13",
+        "day_of_week": "Monday",
+        "mode": "walk",
+        "distance_km": 0.9,
+        "start_time": "09:50",
+        "end_time": "10:05",
+        "description": "Walk back from Sconehenge to CNR"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.267163, 37.858596],
+          [-122.2580, 37.8715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-13",
+        "day_of_week": "Monday",
+        "mode": "walk",
+        "distance_km": 2.1,
+        "start_time": "15:30",
+        "end_time": "15:55",
+        "description": "Afternoon walk from CNR back home"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.2580, 37.8715],
+          [-122.263404, 37.862912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-14",
+        "day_of_week": "Tuesday",
+        "mode": "walk",
+        "distance_km": 2.0,
+        "start_time": "08:20",
+        "end_time": "08:40",
+        "description": "Home to CNR (typical morning commute)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.263404, 37.862912],
+          [-122.2580, 37.8715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-14",
+        "day_of_week": "Tuesday",
+        "mode": "walk",
+        "distance_km": 2.1,
+        "start_time": "15:10",
+        "end_time": "15:35",
+        "description": "CNR back home"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.2580, 37.8715],
+          [-122.263404, 37.862912]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-15",
+        "day_of_week": "Wednesday",
+        "mode": "walk",
+        "distance_km": 2.0,
+        "start_time": "08:15",
+        "end_time": "08:35",
+        "description": "Home to CNR"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.263404, 37.862912],
+          [-122.2580, 37.8715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-15",
+        "day_of_week": "Wednesday",
+        "mode": "walk",
+        "distance_km": 0.8,
+        "start_time": "09:05",
+        "end_time": "09:15",
+        "description": "CNR to Sconehenge breakfast"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.2580, 37.8715],
+          [-122.267163, 37.858596]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-15",
+        "day_of_week": "Wednesday",
+        "mode": "walk",
+        "distance_km": 0.9,
+        "start_time": "10:00",
+        "end_time": "10:15",
+        "description": "Sconehenge back to CNR"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.2720, 37.8710],
+          [-122.2580, 37.8715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-15",
+        "day_of_week": "Wednesday",
+        "mode": "bike",
+        "distance_km": 7.0,
+        "start_time": "16:00",
+        "end_time": "16:30",
+        "description": "Bike from home up to Tilden trailhead"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.263404, 37.862912],
+          [-122.2485, 37.8960]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-16",
+        "day_of_week": "Thursday",
+        "mode": "walk",
+        "distance_km": 2.0,
+        "start_time": "08:25",
+        "end_time": "08:45",
+        "description": "Home to CNR"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.263404, 37.862912],
+          [-122.2580, 37.8715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-16",
+        "day_of_week": "Thursday",
+        "mode": "run",
+        "distance_km": 6.5,
+        "start_time": "17:30",
+        "end_time": "18:15",
+        "description": "Evening run around North Berkeley loop"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.2685, 37.8575],
+          [-122.2790, 37.8810]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-17",
+        "day_of_week": "Friday",
+        "mode": "walk",
+        "distance_km": 2.0,
+        "start_time": "08:10",
+        "end_time": "08:30",
+        "description": "Home to CNR with Sconehenge breakfast stop later"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.263404, 37.862912],
+          [-122.2580, 37.8715]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-17",
+        "day_of_week": "Friday",
+        "mode": "walk",
+        "distance_km": 0.8,
+        "start_time": "09:00",
+        "end_time": "09:10",
+        "description": "CNR to Sconehenge (breakfast 3/3 this week)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.2580, 37.8715],
+          [-122.2720, 37.8710]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-17",
+        "day_of_week": "Friday",
+        "mode": "walk",
+        "distance_km": 1.3,
+        "start_time": "16:00",
+        "end_time": "16:20",
+        "description": "CNR to friend's place near Berkeley Bowl"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.2580, 37.8715],
+          [-122.2688, 37.8590]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-17",
+        "day_of_week": "Friday",
+        "mode": "bike",
+        "distance_km": 7.0,
+        "start_time": "16:30",
+        "end_time": "17:00",
+        "description": "Friday after-school bike from CNR up toward Tilden / Grizzly Peak"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.2580, 37.8715],
+          [-122.2485, 37.8960]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-19",
+        "day_of_week": "Sunday",
+        "mode": "run",
+        "distance_km": 7.5,
+        "start_time": "09:30",
+        "end_time": "10:30",
+        "description": "Long run from South Berkeley to the Marina"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.263404, 37.862912],
+          [-122.3130, 37.8675]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "date": "2025-01-19",
+        "day_of_week": "Sunday",
+        "mode": "car",
+        "distance_km": 20.0,
+        "start_time": "14:00",
+        "end_time": "14:40",
+        "description": "Drive from home to logging sports practice at Russell Research Station (Happy Valley Road, Lafayette)"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [-122.263404, 37.862912],
+          [-122.1533, 37.9164]
+        ]
+      }
+    }
+    
+  ]
+}

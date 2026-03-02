@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>A Week in My Life – Movement Map</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Leaflet CSS -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+    #map {
+      height: 100%;
+      width: 100%;
+    }
+    .legend {
+      background: white;
+      padding: 8px 10px;
+      line-height: 1.4;
+      font-family: system-ui, sans-serif;
+      font-size: 12px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.3);
+      border-radius: 4px;
+    }
+    .legend-title {
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script
+  src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+  crossorigin="">
+</script>
+
+<script>
+  // 1. Set up the map
+  const map = L.map('map');
+
+  // Base layer (OpenStreetMap)
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; OpenStreetMap contributors'
+  }).addTo(map);
+
+  // We'll fit the map to our data bounds once everything loads
+  let allBounds = null;
+
+  // Utility: update overall bounds
+  function extendBounds(layer) {
+    const layerBounds = layer.getBounds ? layer.getBounds() : null;
+    if (!layerBounds || !layerBounds.isValid()) return;
+    if (!allBounds) {
+      allBounds = layerBounds;
+    } else {
+      allBounds = allBounds.extend(layerBounds);
+    }
+  }
+
+  // Color by day-of-week helper
+  function colorForDay(day) {
+    const colors = {
+      'Monday':   '#1f77b4',
+      'Tuesday':  '#ff7f0e',
+      'Wednesday':'#2ca02c',
+      'Thursday': '#d62728',
+      'Friday':   '#9467bd',
+      'Saturday': '#8c564b',
+      'Sunday':   '#e377c2'
+    };
+    return colors[day] || '#333333';
+  }
+
+  // 2. Load trips (lines)
+  fetch('trips.geojson')
+    .then(res => res.json())
+    .then(data => {
+      const tripsLayer = L.geoJSON(data, {
+        style: feature => {
+          const day = feature.properties?.day_of_week;
+          return {
+            color: colorForDay(day),
+            weight: 3,
+            opacity: 0.7
+          };
+        },
+        onEachFeature: (feature, layer) => {
+          const p = feature.properties || {};
+          const html = `
+            <strong>Trip</strong><br/>
+            <strong>Date:</strong> ${p.date || 'n/a'}<br/>
+            <strong>Day:</strong> ${p.day_of_week || 'n/a'}<br/>
+            <strong>Mode:</strong> ${p.mode || 'unknown'}<br/>
+            <strong>Distance:</strong> ${p.distance_km ? p.distance_km + ' km' : 'n/a'}<br/>
+            <strong>Time:</strong> ${p.start_time || '?'} – ${p.end_time || '?'}<br/>
+            <strong>Description:</strong> ${p.description || ''}
+          `;
+          layer.bindPopup(html);
+        }
+      }).addTo(map);
+
+      extendBounds(tripsLayer);
+      if (allBounds) map.fitBounds(allBounds, { padding: [40, 40] });
+    })
+    .catch(err => console.warn('Could not load trips.geojson:', err));
+
+  // 3. Load stops (points)
+  fetch('stops.geojson')
+    .then(res => res.json())
+    .then(data => {
+      const stopsLayer = L.geoJSON(data, {
+        pointToLayer: (feature, latlng) => {
+          const p = feature.properties || {};
+          const duration = p.duration_min || 10;
+          const radius = Math.max(5, Math.min(20, duration / 20));
+          const day = p.day_of_week;
+          return L.circleMarker(latlng, {
+            radius: radius,
+            fillColor: colorForDay(day),
+            color: '#333',
+            weight: 1,
+            opacity: 0.9,
+            fillOpacity: 0.8
+          });
+        },
+        onEachFeature: (feature, layer) => {
+          const p = feature.properties || {};
+          const html = `
+            <strong>${p.name || 'Stop'}</strong><br/>
+            <strong>Category:</strong> ${p.category || 'n/a'}<br/>
+            <strong>Day:</strong> ${p.day_of_week || 'n/a'}<br/>
+            <strong>Duration:</strong> ${p.duration_min ? p.duration_min + ' min' : 'n/a'}
+          `;
+          layer.bindPopup(html);
+        }
+      }).addTo(map);
+
+      extendBounds(stopsLayer);
+      if (allBounds) map.fitBounds(allBounds, { padding: [40, 40] });
+    })
+    .catch(err => console.warn('Could not load stops.geojson:', err));
+
+  // 4. Legend
+  const legend = L.control({position: 'bottomright'});
+  legend.onAdd = function() {
+    const div = L.DomUtil.create('div', 'legend');
+    div.innerHTML = `
+      <div class="legend-title">A Week in My Life</div>
+      <div><strong>Lines</strong> = trips</div>
+      <div><strong>Circles</strong> = stops</div>
+      <div>Circle size = time spent</div>
+      <div>Color = day of week</div>
+    `;
+    return div;
+  };
+  legend.addTo(map);
+</script>
+
+</body>
+</html>

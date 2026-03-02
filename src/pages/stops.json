@@ -1,0 +1,163 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Home (South Berkeley)",
+        "category": "home",
+        "day_of_week": "Monday",
+        "duration_min": 600
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates":  [-122.263404, 37.862912]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "College of Natural Resources",
+        "category": "school",
+        "day_of_week": "Monday",
+        "duration_min": 300
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2580, 37.8715]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sconehenge",
+        "category": "breakfast",
+        "day_of_week": "Monday",
+        "duration_min": 40
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.267163, 37.858596]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Friend's Place (near Berkeley Bowl)",
+        "category": "social",
+        "day_of_week": "Monday",
+        "duration_min": 180
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2688, 37.8590]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tilden Trailhead",
+        "category": "nature_bike",
+        "day_of_week": "Wednesday",
+        "duration_min": 120
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2485, 37.8960]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "North Berkeley Running Loop",
+        "category": "run",
+        "day_of_week": "Thursday",
+        "duration_min": 60
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2790, 37.8810]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Berkeley Marina",
+        "category": "run",
+        "day_of_week": "Sunday",
+        "duration_min": 70
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.3130, 37.8675]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "College of Natural Resources",
+        "category": "school",
+        "day_of_week": "Tuesday",
+        "duration_min": 320
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2580, 37.8715]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sconehenge",
+        "category": "breakfast",
+        "day_of_week": "Wednesday",
+        "duration_min": 45
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.267163, 37.858596]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sconehenge",
+        "category": "breakfast",
+        "day_of_week": "Friday",
+        "duration_min": 50
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.267163, 37.858596]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tilden Trailhead",
+        "category": "nature_bike",
+        "day_of_week": "Friday",
+        "duration_min": 120
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.2485, 37.8960]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Logging Sports Practice – Russell Research Station",
+        "category": "logging_sports",
+        "day_of_week": "Sunday",
+        "duration_min": 180
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-122.1533, 37.9164]
+      }
+    }
+    
+  ]
+}

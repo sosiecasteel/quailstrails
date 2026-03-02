@@ -59,16 +59,22 @@ const READINGS = [
   },
   {
     title: "A deep look at plants will guide decisions around preservation, development, habitat restoration and wildfire mitigation",
-    authors: "fill this in",
-    year: "fill this in",
-    source: "fill this in",
+    authors: "Kate Darby Rauch",
+    year: "2022",
+    source: "BerkeleySide",
     url: "/#/VegetationAnalysis",   // ✅ internal link within your site
     topic: "Fuels",
     tags: ["Berkeley", "East Bay Hills", "Vegetation", "Defensible Space"],
     blurb:
-      "fill this in"
+      "In order to determine the best plan of action for vegetation management, we must take a close look at the species makeup and loading in the East Bay Hills."
   },
-  { title: "The Failure of Planning — McBride & Kent (2019)", url: "/#/failure-of-planning" }
+  { title: "The Failure of Planning", 
+    authors: "Joe R. McBride & Jerry Kent",
+    year: "2019",
+    source: "International Journal of Wildland Fire",
+    topic: "Planning & WUI",
+    tags: ["Vegetation", "Home safety", "community"],
+    url: "/#/failure-of-planning" }
 
 ];
 

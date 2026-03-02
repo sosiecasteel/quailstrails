@@ -1,5 +1,4 @@
 // src/pages/Map.js
-import MapTilerMap from "./MapTilerMap";
 import LeafletMap from "./LeafletMap";
 
 export default function MapPage() {
@@ -20,18 +19,6 @@ export default function MapPage() {
           gridTemplateColumns: "1fr 1fr"
         }}
       >
-        {/* MapLibre / MapTiler */}
-        <div
-          style={{
-            background: "#fff",
-            border: "1px solid #e5e7eb",
-            borderRadius: 12,
-            padding: 12,
-          }}
-        >
-          <h2 style={{ margin: "0 0 8px" }}>MapLibre (MapTiler)</h2>
-          <MapTilerMap />
-        </div>
 
         {/* Leaflet */}
         <div

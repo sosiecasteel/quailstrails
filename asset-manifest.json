@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.aa9d7041.css",
+    "main.js": "/static/js/main.8a04047e.js",
+    "static/js/453.3845b555.chunk.js": "/static/js/453.3845b555.chunk.js",
+    "static/media/flamegirl.png": "/static/media/flamegirl.b13ecd05cf787c7f9bb5.png",
+    "static/media/yellowbikenavbar.PNG": "/static/media/yellowbikenavbar.4556145a4cb9bd4c629c.PNG",
+    "static/media/parkfire2.jpg": "/static/media/parkfire2.8904fa55b8fce4e63ba1.jpg",
+    "static/media/changeisscary.png": "/static/media/changeisscary.3fa9e05663af6c11e7cf.png",
+    "static/media/tubbsfire.jpg": "/static/media/tubbsfire.02f39f36a8d0b8cde1df.jpg",
+    "static/media/dixiefire.jpg": "/static/media/dixiefire.22381912573b8335b530.jpg",
+    "static/media/tunnelfire2.jpg": "/static/media/tunnelfire2.8dbd061b812bac23893d.jpg",
+    "static/media/czusantacruz.jpg": "/static/media/czusantacruz.5565dca1dc4554265f41.jpg",
+    "static/media/CRYPETIC.ttf": "/static/media/CRYPETIC.eaea033dc4b20edaa5e4.ttf",
+    "static/media/darkgreen.jpeg": "/static/media/darkgreen.a582ba9c6fbb2444176c.jpeg",
+    "static/media/PWDolmen.ttf": "/static/media/PWDolmen.81b4ddf7344f6897d27e.ttf",
+    "static/media/BrushATF.otf": "/static/media/BrushATF.8b110406233b42f5fc6b.otf",
+    "static/media/plastic.TTF": "/static/media/plastic.cc7d7beb21c092edf555.TTF",
+    "static/media/palisadesfire.jpeg": "/static/media/palisadesfire.609b046d9884b5997939.jpeg",
+    "static/media/comictragedy.ttf": "/static/media/comictragedy.73872074e7c87db67b99.ttf",
+    "static/media/decembercalendar.png": "/static/media/decembercalendar.757be176c4bc30dab30b.png",
+    "static/media/WesternCowboy.ttf": "/static/media/WesternCowboy.adc43d2fc7b85cf33dd1.ttf",
+    "static/media/campfire2.jpeg": "/static/media/campfire2.004c36f7463f15beeb3d.jpeg",
+    "index.html": "/index.html",
+    "main.aa9d7041.css.map": "/static/css/main.aa9d7041.css.map",
+    "main.8a04047e.js.map": "/static/js/main.8a04047e.js.map",
+    "453.3845b555.chunk.js.map": "/static/js/453.3845b555.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.aa9d7041.css",
+    "static/js/main.8a04047e.js"
+  ]
+}

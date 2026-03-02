@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.aa9d7041.css",
-    "main.js": "/static/js/main.8a04047e.js",
+    "main.js": "/static/js/main.0dd88203.js",
     "static/js/453.3845b555.chunk.js": "/static/js/453.3845b555.chunk.js",
     "static/media/flamegirl.png": "/static/media/flamegirl.b13ecd05cf787c7f9bb5.png",
     "static/media/yellowbikenavbar.PNG": "/static/media/yellowbikenavbar.4556145a4cb9bd4c629c.PNG",
@@ -14,20 +14,23 @@
     "static/media/CRYPETIC.ttf": "/static/media/CRYPETIC.eaea033dc4b20edaa5e4.ttf",
     "static/media/darkgreen.jpeg": "/static/media/darkgreen.a582ba9c6fbb2444176c.jpeg",
     "static/media/PWDolmen.ttf": "/static/media/PWDolmen.81b4ddf7344f6897d27e.ttf",
+    "static/media/quail3.jpg": "/static/media/quail3.55d24a4d29991e2628b5.jpg",
     "static/media/BrushATF.otf": "/static/media/BrushATF.8b110406233b42f5fc6b.otf",
     "static/media/plastic.TTF": "/static/media/plastic.cc7d7beb21c092edf555.TTF",
     "static/media/palisadesfire.jpeg": "/static/media/palisadesfire.609b046d9884b5997939.jpeg",
+    "static/media/quail2.jpg": "/static/media/quail2.390b8ddcd560ba985d3b.jpg",
     "static/media/comictragedy.ttf": "/static/media/comictragedy.73872074e7c87db67b99.ttf",
     "static/media/decembercalendar.png": "/static/media/decembercalendar.757be176c4bc30dab30b.png",
     "static/media/WesternCowboy.ttf": "/static/media/WesternCowboy.adc43d2fc7b85cf33dd1.ttf",
+    "static/media/quail1.jpg": "/static/media/quail1.e9eff7d0a620fa4906f7.jpg",
     "static/media/campfire2.jpeg": "/static/media/campfire2.004c36f7463f15beeb3d.jpeg",
     "index.html": "/index.html",
     "main.aa9d7041.css.map": "/static/css/main.aa9d7041.css.map",
-    "main.8a04047e.js.map": "/static/js/main.8a04047e.js.map",
+    "main.0dd88203.js.map": "/static/js/main.0dd88203.js.map",
     "453.3845b555.chunk.js.map": "/static/js/453.3845b555.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aa9d7041.css",
-    "static/js/main.8a04047e.js"
+    "static/js/main.0dd88203.js"
   ]
 }
